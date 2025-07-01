@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="asset/logo.png" alt="logo">
+            <span>Peter Sawm | Frontend Dev</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Peter Sawm</h1>
+            <h2>Creative Frontend Developer</h2>
+            <p>Passionate about <span class="highlight">3D web effects</span> and <span class="highlight">beautiful UI</span>.<br>Welcome to my portfolio!</p>
+            <a href="#projects" class="btn-main">View Projects <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div id="three-canvas"></div>
+    </header>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I love building interactive, visually stunning web experiences using modern frontend technologies and 3D effects. My focus is on delivering beautiful, performant, and user-friendly interfaces.</p>
+        <div class="skills">
+            <h3>Skills</h3>
+            <ul class="skills-list">
+                <li><i class="ri-html5-fill"></i> HTML5 &amp; CSS3 (Sass/SCSS)</li>
+                <li><i class="ri-javascript-fill"></i> JavaScript (ES6+)</li>
+                <li><i class="ri-reactjs-fill"></i> React.js</li>
+                <li><i class="ri-vuejs-fill"></i> Vue.js</li>
+                <li><i class="ri-threejs-fill"></i> Three.js (3D Web)</li>
+                <li><i class="ri-layout-4-fill"></i> UI/UX Design</li>
+                <li><i class="ri-device-line"></i> Responsive Web Design</li>
+                <li><i class="ri-github-fill"></i> Git &amp; Github</li>
+                <li><i class="ri-terminal-window-fill"></i> Web Animations</li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+                <div class="project-list">
+            <a href="https://your-demo-link-1.com" class="project-card" target="_blank">
+                <img src="asset/item-1.jpg" alt="3D Landing Page Demo">
+                <h3>3D Landing Page</h3>
+                <p>Immersive landing page with animated 3D background using Three.js.</p>
+            </a>
+            <a href="https://your-demo-link-2.com" class="project-card" target="_blank">
+                <img src="asset/item-2.jpg" alt="UI Kit">
+                <h3>Modern UI Kit</h3>
+                <p>Beautiful and reusable UI components for fast prototyping.</p>
+            </a>
+            <a href="https://your-demo-link-3.com" class="project-card" target="_blank">
+                <img src="asset/item-3.jpg" alt="Interactive Gallery">
+                <h3>Interactive Gallery</h3>
+                <p>Photo gallery with smooth transitions and 3D hover effects.</p>
+            </a>
+            <a href="https://your-demo-link-4.com" class="project-card" target="_blank">
+                <img src="asset/item-4.jpg" alt="Dashboard UI">
+                <h3>Analytics Dashboard</h3>
+                <p>Clean and modern dashboard UI with animated charts and cards.</p>
+            </a>
+            <a href="https://your-demo-link-5.com" class="project-card" target="_blank">
+                <img src="asset/item-5.jpg" alt="Portfolio UI">
+                <h3>Personal Portfolio</h3>
+                <p>Minimal, elegant portfolio site with smooth scroll and section reveals.</p>
+            </a>
+            <a href="https://your-demo-link-6.com" class="project-card" target="_blank">
+                <img src="asset/item-6.jpg" alt="E-Commerce Platform">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-featured e-commerce web app with product 3D previews, cart, and secure checkout.</p>
+            </a>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Interested in working together or want to say hi?</p>
+        <a href="mailto:petersawm.contact@gmail.com" class="btn-main">Email Me</a>
+    </section>
+    <footer>
+        <p>© 2025 Peter Sawm. All rights reserved. Built with <i class="ri-heart-fill"></i> and 3D web tech.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

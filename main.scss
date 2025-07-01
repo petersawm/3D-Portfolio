@@ -1,0 +1,67 @@
+// Variables
+$primary-color: #22223b;
+$secondary-color: #4a4e69;
+$accent-color: #9a8c98;
+$bg-color: #f2e9e4;
+$text-color: #222;
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: $bg-color;
+  color: $text-color;
+  min-height: 100vh;
+}
+
+header {
+  background: $primary-color;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+  &:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  .card-content {
+    padding: 1rem;
+    h3 {
+      margin-bottom: 0.5rem;
+      color: $secondary-color;
+    }
+    p {
+      color: $accent-color;
+      font-size: 0.95rem;
+    }
+  }
+}
